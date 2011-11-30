@@ -22,9 +22,40 @@
             </p>
         </div>
     </div>
+
+    <div class="box heatmap">
+        <header>
+            <div class="button"><a class="amaranth" target="new" href="#">Heatmap</a></div>
+        </header>
+        <div>
+            <span class="tilde">&#8764;</span>
+            <img class="border" src ="{{ url_for('static', filename='img/modmine/heatmap.png') }}">
+        </div>
+    </div>
+    <div class="box network">
+        <header>
+            <div class="button"><a class="amaranth" target="new" href="#">Network</a></div>
+        </header>
+        <div>
+            <span class="tilde">&#8764;</span>
+            <img class="border" src ="{{ url_for('static', filename='img/modmine/network.png') }}">
+        </div>
+    </div>
+    <div class="box region">
+        <header>
+            <div class="button"><a class="amaranth" target="new" href="#">Region</a></div>
+        </header>
+        <div>
+            <span class="tilde">&#8764;</span>
+            <img class="border" src ="{{ url_for('static', filename='img/modmine/region.png') }}">
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
     <div class="box amazon">
         <header>
-            <div class="button"><a class="amaranth" target="new" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">Cloud instance</a></div>
+            <div class="button"><a class="blumine" target="new" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">Cloud instance</a></div>
             <h3>amazon</h3>
         </header>
         <div>
@@ -52,7 +83,7 @@
 
     <div class="clear"></div>
 
-    <div class="organisms">
+    <div class="organisms divider">
         <header>
             <p>Choose an organism below to see GBrowse, Dataset Search links:</p>
         </header>
