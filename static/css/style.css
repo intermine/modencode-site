@@ -10,6 +10,7 @@ header #top #title { position:absolute; top:0; left:0; background:url('../img/lo
     height:130px; width:153px; }
 header #top #title p { height:0; overflow: hidden; width:127px; }
 header #top p.sub { position:absolute; top:20px; left:170px; width:270px; }
+header #top p.sub a { color:#EEF0E3; }
 
 header #top div.div { position:absolute; top:0; left:678px; border-left:1px solid #2E94AC; border-right:1px solid #3B6872;
     display:block; height:60px; width:0px; }
@@ -90,6 +91,9 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box a.size-1 { font-size:20px; }
 #callout-boxes div.box a.size-2 { font-size:18px; }
 #callout-boxes div.box a.size-3 { font-size:16px; }
+#callout-boxes div.box img.border { border:1px solid #B2D0D7; width:200px; float:right;
+    box-shadow:1px 1px 5px rgba(104, 181, 199, 0.25); }
+#callout-boxes div.box span.tilde { color:#9AB6BF; font-size:40px; margin-top:15px; display:inline-block; }
 
 #callout-boxes div.box.modmine { width:380px; border-right:1px solid #fff; }
 #callout-boxes div.box.modmine header { -moz-border-radius-topleft:5px; -webkit-border-top-left-radius:5px;
@@ -146,7 +150,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 }
 #callout-boxes div.button a span { font-size:14px; font-size:normal; font-family:serif; }
 
-#callout-boxes div.organisms header { color:#154e5b; border-top:1px solid #b2d0d7; background:rgb(196,225,232);
+#callout-boxes div.divider header { color:#154e5b; border-top:1px solid #b2d0d7; background:rgb(196,225,232);
     background:-moz-linear-gradient(top, rgba(176,209,218,0.5) 0%, rgba(195,224,231,0.5) 85%, rgba(189,217,224,0.6) 100%);
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(176,209,218,0.5)),
         color-stop(85%,rgba(195,224,231,0.5)), color-stop(100%,rgba(189,217,224,0.6)));
