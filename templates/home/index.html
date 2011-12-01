@@ -6,25 +6,46 @@
         <header>
             <a target="new" href="{{ INTERMINE_URL }}query" title="Latest modMine">
                 <h3>modMine</h3>
-                <div class="latest">
-                    <span>release</span>
-                    <span class="version">{{ MODMINE_REL[0] }}</span>
-                </div>
             </a>
+            <div class="button">
+                <a class="amaranth" target="new" href="{{ INTERMINE_URL }}query">Release <span>#</span>{{ MODMINE_REL[0] }}</a>
+            </div>
         </header>
         <div>
-            <h4>Older versions:</h4>
-            <p>
-                {% for rel in MODMINE_REL %}
-                    <a class="size-{{ loop.index }}" target="new" href="{{ INTERMINE_URL }}release-{{ rel }}">{{ rel }}</a>
-                    {%- if not loop.last %},{% endif %}
-                {% endfor %}
-            </p>
+            <div class="left">
+                <h4>Older versions:</h4>
+                <p>
+                    {% for rel in MODMINE_REL %}
+                        <a class="size-{{ loop.index }}" target="new" href="{{ INTERMINE_URL }}release-{{ rel }}">{{ rel }}</a>
+                        {%- if not loop.last %},{% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="right">
+                <div class="feature">
+                    <a href="http://intermine.modencode.org/query/spanUploadOptions.do" target="new">
+                        <img src="{{ url_for('static', filename='img/modmine/network.png') }}" alt="regulatory network">
+                        Networks
+                    </a>
+                </div>
+                <div class="feature">
+                    <a href="http://intermine.modencode.org/query/flyRegulatoryNetwork.do" target="new">
+                        <img src="{{ url_for('static', filename='img/modmine/region.png') }}" alt="region search">
+                        Regions
+                    </a>
+                </div>
+                <div class="feature">
+                    <a href="http://intermine.modencode.org/query/bagDetails.do?scope=global&bagName=example" target="new">
+                        <img src="{{ url_for('static', filename='img/modmine/heatmap.png') }}" alt="gene expression heatmap">
+                        Maps
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="box amazon">
         <header>
-            <div class="button"><a class="amaranth" target="new" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">Cloud instance</a></div>
+            <div class="button"><a class="blumine" target="new" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">Cloud instance</a></div>
             <h3>amazon</h3>
         </header>
         <div>
@@ -33,8 +54,7 @@
     </div>
     <div class="box datasets">
         <header>
-            <div class="button"><a class="blumine" target="new" href="{{ DATASET_SEARCH_URL }}">Datasets</a></div>
-            <h3>Dataset Search</h3>
+            <div class="button center"><a class="blumine" target="new" href="{{ DATASET_SEARCH_URL }}">Dataset Search</a></div>
         </header>
         <div>
             <p>Find, view and download datasets in bulk.</p>
@@ -42,8 +62,7 @@
     </div>
     <div class="box ftp">
         <header>
-            <div class="button"><a class="blumine" target="new" href="{{ FTP_URL }}">Get FTP data</a></div>
-            <h3>FTP Download</h3>
+            <div class="button center"><a class="blumine" target="new" href="{{ FTP_URL }}">FTP Download</a></div>
         </header>
         <div>
             <p>Download publicly released data using the traditional FTP interface.</p>
