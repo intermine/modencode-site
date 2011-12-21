@@ -88,9 +88,6 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box h4 { color:#154e5b; font-size:15px; margin-bottom:10px; }
 #callout-boxes div.box p { color:#167c94; font-size:14px; line-height:20px; }
 #callout-boxes div.box a { color:#167c94; }
-#callout-boxes div.box a.size-1 { font-size:20px; }
-#callout-boxes div.box a.size-2 { font-size:18px; }
-#callout-boxes div.box a.size-3 { font-size:16px; }
 #callout-boxes div.box img.border { border:1px solid #B2D0D7; width:200px; float:right;
     box-shadow:1px 1px 5px rgba(104, 181, 199, 0.25); }
 #callout-boxes div.box span.tilde { color:#9AB6BF; font-size:40px; margin-top:15px; display:inline-block; }
@@ -104,6 +101,16 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box.modmine div.right img { display:block; margin:0 auto; margin-bottom:2px; }
 #callout-boxes div.box.modmine div.right div.feature { float:left; font-size:13px; color:#167C94; padding:0;
     text-align:center; margin-left:15px; }
+#callout-boxes div.box.modmine p.older a { font-size:10px; }
+#callout-boxes div.box.modmine p.older a.size-1 { font-size:20px; }
+#callout-boxes div.box.modmine p.older a.size-2 { font-size:18px; }
+#callout-boxes div.box.modmine p.older a.size-3 { font-size:15px; }
+#callout-boxes div.box.modmine p.older a.size-4,
+#callout-boxes div.box.modmine p.older a.size-5,
+#callout-boxes div.box.modmine p.older a.size-6 { font-size:13px; }
+#callout-boxes div.box.modmine p.older a.size-7,
+#callout-boxes div.box.modmine p.older a.size-8,
+#callout-boxes div.box.modmine p.older a.size-9 { font-size:12px; }
 
 #callout-boxes div.box.amazon { width:255px; border-right:1px solid #fff; }
 #callout-boxes div.box.amazon header { border-top-width:1px; }
