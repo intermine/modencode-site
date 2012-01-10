@@ -25,6 +25,19 @@
     </script>
 </head>
 <body>
+    <div id="bar"><a class="close">×</a></div>
+    <script type="text/javascript">
+        $.getJSON('/status/',
+            function(data) {
+                if (data.message) {
+                    $('#bar')
+                    .append($('<span/>', {'text': data.message}))
+                    .slideDown('slow')
+                    .click(function() { $(this).fadeOut('fast') });
+                }
+            }
+        );
+    </script>
     <header>
         <div id="top">
             <div class="wrap">
