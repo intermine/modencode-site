@@ -33,7 +33,7 @@ Run <code>./github_update.sh</code> to stop the running server, run a git pull a
 ### How do I show a server down message?
 1. Have an RSS feed ready where the last item has the message you want to display in the title with a special trigger-tag in the message
  that modENCODE should look for.
-2. Look at <code>constants.py</code> file and modify the <code>MESSAGING_RSS_URL<code> constant to point to your RSS feed looking for
+2. Look at <code>constants.py</code> file and modify the <code>MESSAGING_RSS_URL</code> constant to point to your RSS feed looking for
  a trigger-tag defined in <code>MESSAGING_RSS_TAG</code>.
 
 ### How do I stop showing a server down message?
