@@ -3,6 +3,11 @@ body { background:#FFF url('../img/bg.png') repeat-x top left; font-family:Arial
 
 i { font-style:italic; }
 
+/* message bar */
+#bar { display:none; background:#F4A83D; border-bottom:2px solid #D6800C; padding:7px 0;  font-weight:bold; text-align:center;
+    color:#735005; width:100%; position:relative; }
+#bar a.close { padding:0 4px; border:2px solid #735005; background:#FAD163; cursor:pointer; position:absolute; top:6px; right:20px; }
+
 /* header */
 header #top { background:#167C94; height:60px; color:#EEF0E3; font-size:11px; }
 header #top div.wrap { width:1000px; margin:0 auto; position:relative; }

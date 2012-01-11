@@ -41,13 +41,16 @@ def index(update=False):
         m = Modmine()
         data = m.get_catexp_data()
         gbrowse_base = m.get_gbrowse_base()
-	
+
         time = utils.current_time()
 
         from models.publications import publications as modencode_publications
 
         html = render_template('home/index.html', **dict(locals().items() + globals().items()))
-        t.write(html)
+        try:
+            t.write(html)
+        except Exception, inst:
+            return str(inst)
 
     return t.read()
 
