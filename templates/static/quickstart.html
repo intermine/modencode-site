@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <div class="page">
+
+<h3>A quick start guide to navigating modMine</h3>
+
+
+<p>Welcome to modMine! 
+The purpose of modMine is to provide an interface for accessing modENCODE project data, as well as hosting a range of analysis tools to be used with it. 
+</p>
+
+<p>Here is a quick guide to getting started. For a more detailed look at modMine features, why not <a href="http://intermine.modencode.org/help/tour/start.html">take a tour</a>?
+</p>
+
+<h4> What data exists? </h4>
+
+<p>At present, modMine contains 
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="12" width="40"src="
+http://intermine.modencode.org/query/service/query/results?query=%3Cquery+name%3D%22%22+model%3D%22genomic%22+view%3D%22Submission.DCCid%22+sortOrder%3D%22Submission.DCCid+asc%22%3E%3C%2Fquery%3E&format=count"></iframe> submissions, organised in 
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="12" width="50"src="http://intermine.modencode.org/query/service/query/results?query=%3Cquery+name%3D%22%22+model%3D%22genomic%22+view%3D%22Experiment.name%22+sortOrder%3D%22Experiment.name+asc%22%3E%3C%2Fquery%3E&format=count"></iframe>
+experiments. There are
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="12" width="40"src="
+http://intermine.modencode.org/query/service/query/results?query=%3Cquery+name%3D%22%22+model%3D%22genomic%22+view%3D%22Submission.DCCid%22+sortOrder%3D%22Submission.DCCid+asc%22%3E%3Cconstraint+path%3D%22Submission.organism.genus%22+op%3D%22%3D%22+value%3D%22Drosophila%22%2F%3E%3C%2Fquery%3E&format=count"></iframe>
+ 
+fly submissions and 
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="12" width="50"src="
+http://intermine.modencode.org/query/service/query/results?query=%3Cquery+name%3D%22%22+model%3D%22genomic%22+view%3D%22Submission.DCCid%22+sortOrder%3D%22Submission.DCCid+asc%22%3E%3Cconstraint+path%3D%22Submission.organism.genus%22+op%3D%22%3D%22+value%3D%22Caenorhabditis%22%2F%3E%3C%2Fquery%3E&format=count"></iframe>
+worm ones.
+</p><p>
+ Each submission corresponds to one experiment done under a particular set of conditions.  To get an idea of the scope of the modENCODE project, you can browse data <a href="http://intermine.modencode.org/query/projectsSummary.do">by category</a>.  From there, you can find links to specific projects such as <a href="http://intermine.modencode.org/query/experiment.do?experiment=Nucleosome%20mapping">nucleosome mapping in <i>C. elegans</i></a> or <a href="http://intermine.modencode.org/query/experiment.do?experiment=Gene%20Model%20Prediction">gene model prediction in <i>Drosophila</i></a>.
+</p>
+
+<h4> How do I find a specific dataset? </h4>
+
+<p>If you're interested in a specific protein, modification or category of molecules, you can use the Search box in the top right corner to retrieve a range of information about it including any submissions found. <a href="http://intermine.modencode.org/">modMine home page</a> also has a search box that allows you to search through datasets based on the associated metadata, so for example, you can search for all 'ChIP-chip' experiments, or for data produced by a particular lab.  
+</p>
+<p>Further to that, the main section of the <a href="http://www.modencode.org">modENCODE project website</a> allows  browsing by category, experiment and organism. The same page links also to the <a href="http://data.modencode.org/">Dataset search</a> tool, where you can specify a range of filters (such as technique or developmental stage), as well as view and download data. 
+</p>
+
+<h4> How do I download modENCODE data? </h4>
+
+<p><b>To download an individual dataset:</b> each submission has a report page.  In the top right corner, under 'Data Files Download', there are links to all the data files associated with that submission, which you can download by clicking on them.  There are usually both raw data files from the experiments and a file of processed results. 
+</p>
+
+<p><b>To bulk download data:</b> The easiest tool to use is the <a href="ftp://data.modencode.org">FTP interface</a> on the <a href="http://www.modencode.org/">modENCODE website</a>.  Alternatively, the <a href="http://data.modencode.org/">Dataset search</a> tool allows a user to select and download multiple datasets. 
+</p>
+<p>You can also <a href="http://intermine.modencode.org/query/bag.do">upload a list of genes</a>, then use <a href="http://intermine.modencode.org/query/template.do?name=Gene_Submissions&scope=all">this template query</a> to find all data submissions associated with those genes. 
+</p>
+
+<h4> Can I upload my own data? </h4>
+
+<p>You can <a href="http://intermine.modencode.org/query/bag.do?subtab=upload">upload gene lists</a> which can then be used for further queries. Your gene lists will be automatically saved if you're <a href="http://intermine.modencode.org/query/login.do">logged in</a>.  You can also upload <a href="http://intermine.modencode.org/query/spanUploadOptions.do">a set of genome regions</a> (e.g. as a .bed or .gff file) and investigate particular sets of features in those regions.
+</p>
+
+<h4> How do I analyse data with modMine? </h4>
+
+<p>The powerful thing about modMine is that it integrates a huge range of different datasets, which can then be compared and analysed together to draw biological conclusions.  As well as offering access to the data, modMine also provides tools for analysing it.  Template forms for answering the more common questions (e.g. which transcription factor binding sites are associated with a particular gene or list of genes) can be found in the <a href="http://intermine.modencode.org/query/templates.do">Templates section</a> of the website.  If you have a question that's not covered in this section, you can also construct <a href="http://intermine.modencode.org/query/customQuery.do">custom queries</a>.
+</p>
+
+<p>If you've <a href="http://intermine.modencode.org/query/bag.do?subtab=view">uploaded a gene list</a>, 
+there is a page with a range of analysis results, e.g. an overview of chromosomal locations and GO enrichment.
+ In the case of <i>Drosophila</i>, this page also includes a heatmap of gene expression throughout development 
+ for the genes in question [<a href="http://intermine.modencode.org/query/bagDetails.do?scope=global&bagName=example">example</a>].  
+
+Further questions can then be answered using <a href="http://intermine.modencode.org/query/templates.do">templates</a> or <a href="http://intermine.modencode.org/query/customQuery.do">custom queries</a>.
+</p>
+
+<p>Further available analysis tools include uploading <a href="http://intermine.modencode.org/query/spanUploadOptions.do">a set of genome regions</a> of interest and comparing them to modENCODE data, browsing through <a href="http://intermine.modencode.org/query/chromatinStates.do">a visualization</a> of <i>Drosophila</i> chromatin states, and exploring a hierarchical view of physical regulatory networks for <a href="http://intermine.modencode.org/query/wormRegulatoryNetwork.do">worm</a> and <a href="http://intermine.modencode.org/query/flyRegulatoryNetwork.do">fly</a>. 
+</p>
+
+<h4> Further questions? </h4>
+
+<p><a href="http://intermine.modencode.org/help/tour/start.html">Take a tour</a> of modMine tools, or <a href="http://www.modencode.org/contact-us/">contact us</a>.
+</p>
+  </div>
+
+{% endblock %}
