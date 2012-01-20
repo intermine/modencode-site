@@ -31,9 +31,9 @@
             function(data) {
                 if (data.message) {
                     $('#bar')
-                    .append($('<span/>', {'text': data.message}))
+                    .append($('<span/>', {'html': data.message}))
                     .slideDown('slow')
-                    .click(function() { $(this).fadeOut('fast') });
+                    .parent().find('.close').click(function() { $(this).closest('#bar').fadeOut('fast') });
                 }
             }
         );
