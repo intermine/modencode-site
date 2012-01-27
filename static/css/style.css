@@ -322,7 +322,7 @@ footer { margin:0 auto; margin-top:16px; width:1000px; text-align:center; color:
 div.page { background:#FFF; border:1px solid #d7d5c8; -moz-border-radius:5px; -webkit-border-radius:5px;
     -o-border-radius:5px; border-radius:5px; padding:20px; font-size:14px; line-height:16px; }
 div.page h3 { color:#565148; margin-bottom:20px; font-size:20px; font-weight:bold; }
-div.page h4 { color:#167C94; margin-bottom:20px; font-size:18px; }
+div.page h4 { color:#565148; margin-bottom:4px; font-size:16px; font-weight:bold; }
 div.page p,
 div.page ul { font-size:14px; line-height:16px; margin-bottom:10px; }
 div.page ul { list-style-type:disc; margin-left:20px; }
