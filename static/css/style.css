@@ -16,7 +16,8 @@ header #top #title { position:absolute; top:0; left:0; background:url('../img/lo
     height:130px; width:153px; }
 header #top #title p { height:0; overflow: hidden; width:127px; }
 header #top p.sub { position:absolute; top:20px; left:170px; width:270px; }
-header #top p.sub a { color:#EEF0E3; }
+header #top p.sub a { color:#EEF0E3; text-decoration:none; }
+header #top p.sub b { color:#EEF0E3; font-weight:bold;}
 
 header #top div.div { position:absolute; top:0; left:678px; border-left:1px solid #2E94AC; border-right:1px solid #3B6872;
     display:block; height:60px; width:0px; }
@@ -216,6 +217,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
     background:-ms-linear-gradient(top, rgba(215,213,200,0.7) 0%,rgba(236,234,224,1) 1%,rgba(255,255,255,0.6) 8%);
     background:linear-gradient(top, rgba(215,213,200,0.7) 0%,rgba(236,234,224,1) 1%,rgba(255,255,255,0.6) 8%); }
 #modmine-projects h3 { color:#565148; font-weight:bold; text-shadow:1px 1px 1px #e4e5e4; margin:0 0 15px 13px; }
+#modmine-projects h4 { color:#565148; font-weight:bold; text-shadow:1px 1px 1px #e4e5e4; margin:0 0 15px 13px; }
 
 /* modmine projects -> sidebar */
 aside { border-right:1px solid #fff; width:280px; float:left; padding-top:20px; color:#24251f; }
@@ -322,7 +324,7 @@ footer { margin:0 auto; margin-top:16px; width:1000px; text-align:center; color:
 div.page { background:#FFF; border:1px solid #d7d5c8; -moz-border-radius:5px; -webkit-border-radius:5px;
     -o-border-radius:5px; border-radius:5px; padding:20px; font-size:14px; line-height:16px; }
 div.page h3 { color:#565148; margin-bottom:20px; font-size:20px; font-weight:bold; }
-div.page h4 { color:#167C94; margin-bottom:20px; font-size:18px; }
+div.page h4 { color:#565148; margin-bottom:4px; font-size:16px; font-weight:bold; }
 div.page p,
 div.page ul { font-size:14px; line-height:16px; margin-bottom:10px; }
 div.page ul { list-style-type:disc; margin-left:20px; }
