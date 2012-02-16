@@ -107,16 +107,6 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box.modmine div.right img { display:block; margin:0 auto; margin-bottom:2px; }
 #callout-boxes div.box.modmine div.right div.feature { float:left; font-size:13px; color:#167C94; padding:0;
     text-align:center; margin-left:15px; }
-#callout-boxes div.box.modmine p.older a { font-size:10px; }
-#callout-boxes div.box.modmine p.older a.size-1 { font-size:20px; }
-#callout-boxes div.box.modmine p.older a.size-2 { font-size:18px; }
-#callout-boxes div.box.modmine p.older a.size-3 { font-size:15px; }
-#callout-boxes div.box.modmine p.older a.size-4,
-#callout-boxes div.box.modmine p.older a.size-5,
-#callout-boxes div.box.modmine p.older a.size-6 { font-size:13px; }
-#callout-boxes div.box.modmine p.older a.size-7,
-#callout-boxes div.box.modmine p.older a.size-8,
-#callout-boxes div.box.modmine p.older a.size-9 { font-size:12px; }
 
 #callout-boxes div.box.amazon { width:255px; border-right:1px solid #fff; }
 #callout-boxes div.box.amazon header { border-top-width:1px; }
@@ -132,7 +122,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 
 #callout-boxes div.button { -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px;
     padding:0 !important; margin:0; -moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.25); box-shadow:1px 1px 2px rgba(0, 0, 0, 0.25); }
+    -webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.25); box-shadow:1px 1px 2px rgba(0, 0, 0, 0.25); position:relative; }
 #callout-boxes header div.button { float:right; display:inline-block !important; }
 #callout-boxes header div.button.center { float:none; margin:0 auto; display:block !important; text-align:center; }
 #callout-boxes div.button a { text-decoration:none; color:#fff !important; font-weight:bold; display:block;
@@ -162,6 +152,25 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
     box-shadow:inset 0 0 5px rgba(104, 181, 199, 0.75);
 }
 #callout-boxes div.button a span { font-size:14px; font-size:normal; font-family:serif; }
+#callout-boxes div.button.dropdown a { padding-right:40px; }
+#callout-boxes div.button div.dropdown { position:absolute; top:0; right:0; width:8px; height:8px; border-left:1px solid #9E143B;
+    cursor:pointer; }
+#callout-boxes div.button div.dropdown span.caret { border-top-color:#FFF; border-left:4px solid transparent;
+    border-right:4px solid transparent; border-top:4px solid #000; display:inline-block; opacity:0.5;
+    filter:alpha(opacity=50); vertical-align:top; margin-top:3px; }
+#callout-boxes #history ul { display:none; position:absolute; z-index:2; background:#D6EFF4; padding:14px; border:1px solid #72B0BF;
+    -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border-top:0; width:110px;
+    -moz-box-shadow:1px 1px 2px #70acb8; -webkit-box-shadow:1px 1px 2px #70acb8; box-shadow:1px 1px 2px #70acb8; }
+#callout-boxes #history ul a { color:#167C94 !important; font-size:10px; }
+#callout-boxes #history ul a.size-1 { font-size:20px; }
+#callout-boxes #history ul a.size-2 { font-size:18px; }
+#callout-boxes #history ul a.size-3 { font-size:15px; }
+#callout-boxes #history ul a.size-4,
+#callout-boxes #history ul a.size-5,
+#callout-boxes #history ul a.size-6 { font-size:13px; }
+#callout-boxes #history ul a.size-7,
+#callout-boxes #history ul a.size-8,
+#callout-boxes #history ul a.size-9 { font-size:12px; }
 
 #callout-boxes div.divider header { color:#154e5b; border-top:1px solid #b2d0d7; background:rgb(196,225,232);
     background:-moz-linear-gradient(top, rgba(176,209,218,0.5) 0%, rgba(195,224,231,0.5) 85%, rgba(189,217,224,0.6) 100%);
