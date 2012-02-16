@@ -171,6 +171,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes #history ul a.size-7,
 #callout-boxes #history ul a.size-8,
 #callout-boxes #history ul a.size-9 { font-size:12px; }
+#callout-boxes #history ul a:hover { color:#FFF !important; background:#167C94; border-radius:0; }
 
 #callout-boxes div.divider header { color:#154e5b; border-top:1px solid #b2d0d7; background:rgb(196,225,232);
     background:-moz-linear-gradient(top, rgba(176,209,218,0.5) 0%, rgba(195,224,231,0.5) 85%, rgba(189,217,224,0.6) 100%);
