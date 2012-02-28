@@ -90,6 +90,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box header div { display:inline; }
 #callout-boxes div.box div { padding:10px 12px; }
 #callout-boxes div.box div.left { padding:0; float:left; }
+#callout-boxes div.box div.left div { padding:0; }
 #callout-boxes div.box div.right { padding:0; display:inline-block; float:right; }
 #callout-boxes div.box h4 { color:#154e5b; font-size:15px; margin-bottom:10px; }
 #callout-boxes div.box p { color:#167c94; font-size:14px; line-height:20px; }
@@ -98,12 +99,11 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
     box-shadow:1px 1px 5px rgba(104, 181, 199, 0.25); }
 #callout-boxes div.box span.tilde { color:#9AB6BF; font-size:40px; margin-top:15px; display:inline-block; }
 
-#callout-boxes div.box.modmine { width:380px; border-right:1px solid #fff; }
+#callout-boxes div.box.modmine { width:442px; border-right:1px solid #fff; }
 #callout-boxes div.box.modmine header { -moz-border-radius-topleft:5px; -webkit-border-top-left-radius:5px;
     border-top-left-radius:5px; border-width:1px 0 0 1px; }
 #callout-boxes div.box.modmine h4,
-#callout-boxes div.box.modmine p { width:140px; }
-#callout-boxes div.box.modmine div.right { border-left:1px solid #fff; }
+#callout-boxes div.box.modmine p { width:208px; }
 #callout-boxes div.box.modmine div.right img { display:block; margin:0 auto; margin-bottom:2px; }
 #callout-boxes div.box.modmine div.right div.feature { float:left; font-size:13px; color:#167C94; padding:0;
     text-align:center; margin-left:15px; position:relative; }
@@ -114,10 +114,10 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box.amazon header h3 { background:url('../img/amazon-logo.png') no-repeat top left; width:85px; height:0;
     overflow:hidden; padding:22px 0 0 0; margin-bottom:0px; }
 
-#callout-boxes div.box.datasets { width:181px; border-right:1px solid #fff; }
+#callout-boxes div.box.datasets { width:150px; border-right:1px solid #fff; }
 #callout-boxes div.box.datasets header { border-top-width:1px; }
 
-#callout-boxes div.box.ftp { width:181px; }
+#callout-boxes div.box.ftp { width:150px; }
 #callout-boxes div.box.ftp header { -moz-border-radius-topright:5px; -webkit-border-top-right-radius:5px;
     border-top-right-radius:5px; border-width:1px 1px 0 0; }
 

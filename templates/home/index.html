@@ -32,10 +32,19 @@
         </header>
         <div>
             <div class="left">
-                
+                <div class="networks">
+                    <p><strong>Explore</strong> a hierarchical view of the physical regulatory networks for fly and worm.</p>
+                </div>
+                <div class="regions" style="display:none">
+                    <p><strong>Upload your</strong> genomic regions and search for features found by the
+                        <strong>modENCODE</strong> project.</p>
+                </div>
+                <div class="maps" style="display:none">
+                    <p>Upload your list of fly gene and view an expression score heatmap.</p>
+                </div>
             </div>
             <div class="right">
-                <div class="feature">
+                <div class="feature" data-type="networks">
                     <a class="action" href="#">
                         <img src="{{ url_for('static', filename='img/modmine/network.png') }}" alt="regulatory network">
                         Networks
@@ -54,29 +63,35 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-type="regions">
                     <a href="http://intermine.modencode.org/query/spanUploadOptions.do" target="new">
                         <img src="{{ url_for('static', filename='img/modmine/region.png') }}" alt="region search">
                         Regions
                     </a>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-type="maps">
                     <a href="http://intermine.modencode.org/query/bagDetails.do?scope=global&bagName=example" target="new">
                         <img src="{{ url_for('static', filename='img/modmine/heatmap.png') }}" alt="gene expression heatmap">
                         Maps
                     </a>
                 </div>
-
-                <script type="text/javascript">
-                    $('div.box.modmine div.feature a.action').click(function() {
-                        $('div.actions').removeClass('active')
-                        $(this).parent().find('div.actions').addClass('active').toggle();
-                        $('div.actions:not(.active)').hide();
-                    });
-                </script>
             </div>
         </div>
+        <script type="text/javascript">
+            // Onhover show bigger description.
+            $('div.box.modmine div.feature').hover(function() {
+                $("div.box.modmine div.left div").hide();
+                $(this).closest("div.box.modmine").find("div.left div." + $(this).attr("data-type")).show();
+            });
+            
+            // Regulatory networks organism boxes.
+            $('div.box.modmine div.feature a.action').click(function() {
+                $('div.actions').removeClass('active')
+                $(this).parent().find('div.actions').addClass('active').toggle();
+                $('div.actions:not(.active)').hide();
+            });
+        </script>
     </div>
 
     <div class="box amazon">
