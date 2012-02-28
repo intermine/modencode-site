@@ -154,13 +154,14 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.button a span { font-size:14px; font-size:normal; font-family:serif; }
 
 #callout-boxes div.button.dropdown a { padding-right:40px; }
-#callout-boxes div.button div.dropdown { position:absolute; top:0; right:0; width:8px; height:8px; border-left:1px solid #9E143B;
+#callout-boxes div.button div.dropdown { position:absolute; top:0; right:0; width:8px; height:8px; border-left:1px solid #0A313A;
     cursor:pointer; }
 #callout-boxes div.button div.dropdown span.caret { border-top-color:#FFF; border-left:4px solid transparent;
     border-right:4px solid transparent; border-top:4px solid #000; display:inline-block; opacity:0.5;
     filter:alpha(opacity=50); vertical-align:top; margin-top:3px; }
+#callout-boxes #history { margin-left:10px; }
 #callout-boxes #history ul { display:none; position:absolute; z-index:2; background:#D6EFF4; padding:14px; border:1px solid #72B0BF;
-    -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border-top:0; width:110px;
+    -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border-top:0; width:96px;
     -moz-box-shadow:1px 1px 2px #70acb8; -webkit-box-shadow:1px 1px 2px #70acb8; box-shadow:1px 1px 2px #70acb8; }
 #callout-boxes #history ul a { color:#167C94 !important; font-size:10px; }
 #callout-boxes #history ul a.size-1 { font-size:20px; }
@@ -177,9 +178,11 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.button span.cloud { background:url("../img/cloud.png") no-repeat top left; width:21px; height:12px;
     display:inline-block; margin:0 2px; }
 #callout-boxes div.button span.download { background:url("../img/download.png") no-repeat top left; width:15px; height:14px;
-    display:inline-block; margin:0 2px; }
+    display:inline-block; margin:0 2px; vertical-align:bottom; }
 #callout-boxes div.button span.search { background:url("../img/search.png") no-repeat top left; width:14px; height:14px;
-    display:inline-block; margin:0 2px; }
+    display:inline-block; margin:0 2px; vertical-align:bottom; }
+#callout-boxes div.button span.clock { background:url("../img/clock.png") no-repeat top left; width:14px; height:14px;
+    display:inline-block; margin:0 2px; vertical-align:bottom; }
 
 #callout-boxes div.divider header { color:#154e5b; border-top:1px solid #b2d0d7; background:rgb(196,225,232);
     background:-moz-linear-gradient(top, rgba(176,209,218,0.5) 0%, rgba(195,224,231,0.5) 85%, rgba(189,217,224,0.6) 100%);
