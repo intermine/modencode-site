@@ -106,7 +106,8 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.box.modmine div.right { border-left:1px solid #fff; }
 #callout-boxes div.box.modmine div.right img { display:block; margin:0 auto; margin-bottom:2px; }
 #callout-boxes div.box.modmine div.right div.feature { float:left; font-size:13px; color:#167C94; padding:0;
-    text-align:center; margin-left:15px; }
+    text-align:center; margin-left:15px; position:relative; }
+#callout-boxes div.box.modmine div.feature div.actions { top:68px; display:none; }
 
 #callout-boxes div.box.amazon { width:255px; border-right:1px solid #fff; }
 #callout-boxes div.box.amazon header { border-top-width:1px; }
@@ -216,14 +217,14 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.organisms ul li.fly_virilis { background-image:url('../img/organisms/d-virilis.png'); }
 #callout-boxes div.organisms ul li.fly_yakuba { background-image:url('../img/organisms/d-genericus.png'); }
 
-#callout-boxes div.organisms ul li div.actions { position:absolute; top:45px; left:0; background:#FFF; padding:14px;
+#callout-boxes div.actions { position:absolute; top:45px; left:0; background:#FFF; padding:14px; z-index:1;
     -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border:1px solid #72b0bf;
     -moz-box-shadow:3px 3px 4px #70acb8; -webkit-box-shadow:3px 3px 4px #70acb8; box-shadow:3px 3px 4px #70acb8; }
-#callout-boxes div.organisms ul li div.actions div { padding:0 !important; }
-#callout-boxes div.organisms ul li div.actions div:first-child { margin-bottom:14px; }
-#callout-boxes div.organisms ul li div.actions a { white-space:nowrap; font-size:16px; font-style:normal;
-    text-align:center; width:150px; display:block; }
-#callout-boxes div.organisms ul li div.actions a span { font-style:italic; font-weight:normal; margin-right:4px;
+#callout-boxes div.actions div { padding:0 !important; }
+#callout-boxes div.actions div:first-child { margin-bottom:14px; }
+#callout-boxes div.actions a { white-space:nowrap; font-size:16px; font-style:normal;
+    text-align:center; display:block; }
+#callout-boxes div.actions a span { font-style:italic; font-weight:normal; margin-right:4px;
     font-size:14px; }
 
 /* modmine projects */
