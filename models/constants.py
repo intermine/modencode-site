@@ -1,6 +1,6 @@
 DATASOURCE_ROOT = 'http://intermine.modencode.org/query'
 INTERMINE_URL = 'http://intermine.modencode.org/'
-MODMINE_REL = ['29', '28', '27', '26', '25', '24','23','22','21','20','19','18','17','16']
+MODMINE_REL = ['29', '27', '26', '25', '24','23','22','21','20','19','18','17','16']
 DATASET_SEARCH_URL = 'http://data.modencode.org'
 FTP_URL = 'ftp://data.modencode.org'
 PRERELEASE_URL = 'http://submit.modencode.org/submit/bulk_download'
