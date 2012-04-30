@@ -15,7 +15,9 @@
                 <div class="dropdown"><span class="caret"></span></div>
                 <ul>
                     {% for rel in MODMINE_REL %}
+                    {%- if not loop.first %}
                         <li><a class="size-{{ loop.index }}" target="new" href="{{ INTERMINE_URL }}release-{{ rel }}">{{ rel }}</a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>            
