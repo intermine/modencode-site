@@ -1,0 +1,197 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <div class="page">
+
+<h3>Frequently Asked Questions</h3>
+
+
+<p>Welcome to the modENCODE FAQ page. This is a collection of question compiled from the help requests sent to help@modencode.org. If you can&#39;t find the information you&#39;re interested in, just drop us an email. </p>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<td>
+<div id="toctitle">
+<strong>Contents</strong>
+</div>
+<ul>
+<li class="toclevel-1"><a href="#Data_Access">Data Access</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#How_do_I_access_modENCODE_data.3F">How do I access modENCODE data?</a>
+</li>
+<li class="toclevel-2"><a href="#What_is_the_difference_between_data_at_http:.2F.2Fdata.modencode.org_and_data_in_modMine.3F">What is the difference between data at http://data.modencode.org and data in modMine?</a>
+</li>
+<li class="toclevel-2"><a href="#What_is_the_replicate_and_experiment.2Finput_structure_for_the_ChIP_experiments.3F">What is the replicate and experiment/input structure for the ChIP experiments?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Data_visualisation_and_interpretation">Data visualisation and interpretation</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#How_are_the_.27peaks.27_calculated_for_ChIP_experiments.3F">How are the &#39;peaks&#39; calculated for ChIP experiments?</a>
+</li>
+<li class="toclevel-2"><a href="#How_significant_are_the_.27peaks.27_in_ChIP_experiments.3F">How significant are the &#39;peaks&#39; in ChIP experiments?</a>
+</li>
+<li class="toclevel-2"><a href="#How_can_I_extract_genome_sequences_upstream_and.2For_downstream_of_particular_features.3F">How can I extract genome sequences upstream and/or downstream of particular features?</a>
+</li>
+<li class="toclevel-2"><a href="#How_do_I_export_data_to_the_UCSC_browser.3F">How do I export data to the UCSC browser?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Experiment_information">Experiment information</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#Which_antibodies_were_used_for_different_experiments.3F">Which antibodies were used for different experiments?</a>
+</li>
+<li class="toclevel-2"><a href="#How_do_I_obtain_an_aliquot_of_the_antibodies_used.3F">How do I obtain an aliquot of the antibodies used?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Using_modMine">Using modMine</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#How_do_I_cite_modMine.3F">How do I cite modMine?</a>
+</li>
+<li class="toclevel-2"><a href="#Can_modMine_analyse_my_raw_array_.2F_sequencing_data_for_me.3F">Can modMine analyse my raw array / sequencing data for me?</a>
+</li>
+<li class="toclevel-2"><a href="#How_do_I_find_out_the_genes_associated_with_particular_genome-wide_binding_datasets.3F">How do I find out the genes associated with particular genome-wide binding datasets?</a>
+</li>
+<li class="toclevel-2"><a href="#I_have_a_link_to_a_webpage_in_an_outdated_release_of_modMine._How_do_I_access_the_same_page_in_the_current_release.3F">I have a link to a webpage in an outdated release of modMine. How do I access the same page in the current release?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Using_GBrowse">Using GBrowse</a>
+</li>
+<ul>
+<!--
+<li class="toclevel-2"><a href="#How_do_I_upload_custom_tracks_to_GBrowse.3F">How do I upload custom tracks to GBrowse?</a>
+</li>
+-->
+<li class="toclevel-2"><a href="#What_is_the_best_way_to_store_and_visualize_Drosophila_genome_annotations_around_my_genomic_locations_of_interest.3F">What is the best way to store and visualize Drosophila genome annotations around my genomic locations of interest?</a>
+</li>
+<li class="toclevel-2"><a href="#When_viewing_data.2C_what_is_the_SD_.28z-score.29_view.3F_Can_you_change_the_scaling_of_it.3F">When viewing data, what is the SD (z-score) view? Can you change the scaling of it?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Further_resources">Further resources</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#How_can_I_get_more_help_.2F_training.3F">How can I get more help / training?</a>
+</li>
+</ul>
+<li class="toclevel-1"><a href="#Questions_about_specific_submissions">Questions about specific submissions</a>
+</li>
+<ul>
+<li class="toclevel-2"><a href="#What_is_the_difference_between_the_CTCF_N_and_CTCF_C_datasets.3F">What is the difference between the CTCF_N and CTCF_C datasets?</a>
+</li>
+<li class="toclevel-2"><a href="#Which_RNA_PolII_antibodies_were_used_in_different_projects.3F">Which RNA PolII antibodies were used in different projects?</a>
+</li>
+<li class="toclevel-2"><a href="#Where_can_I_find_a_file_with_the_exons_transcribed_in_each_developmental_state_in_the_worm.3F">Where can I find a file with the exons transcribed in each developmental state in the worm?</a>
+</li>
+<li class="toclevel-2"><a href="#How_do_I_order_clones_that_contain_the_coding_sequence_for_a_gene_included_in_the_MIP_cDNA_library.3F">How do I order clones that contain the coding sequence for a gene included in the MIP cDNA library?</a>
+</li>
+</ul>
+</ul></td></tr></table><hr/>
+<h4><span class="mw-headline" id="Data_Access">Data Access</span></h4>
+
+<strong><span class="mw-headline" id="How_do_I_access_modENCODE_data.3F">How do I access modENCODE data?</span></strong>
+
+<p>There are a number of different ways to do this. Here are 5 ways to do it:</p>
+<p>1. The <a class="externallink" href="http://data.modencode.org" rel="nofollow" title="http://data.modencode.org">faceted data browser</a>: This is a nice user interface for browsing the available datasets. There are a range of filters available for selecting your datasets of interest, and there are links for viewing the data in GBrowse, modMine, and links for downloading it.</p>
+<p>2. <a class="externallink" href="http://intermine.modencode.org/query/projectsSummary.do" rel="nofollow" title="http://intermine.modencode.org/query/projectsSummary.do">Browsing by category</a>: This feature exists both on the <a class="externallink" href="http://www.modencode.org" rel="nofollow" title="http://www.modencode.org">modENCODE webpage</a> and in <a class="externallink" href="http://intermine.modencode.org" rel="nofollow" title="http://intermine.modencode.org">modMine</a>. The datasets are sorted into broad categories – for example ‘Chromatin structure’, and each category has a number of studies associated with it – for example ‘Nucleosome mapping’ and ‘Genome-wide chromatin profiling’. Clicking on a study takes you to a list of all the data submissions associated with it.</p>
+<p>3. Keyword search: This feature is available on the front page of <a class="externallink" href="http://intermine.modencode.org" rel="nofollow" title="http://intermine.modencode.org">modMine</a>, as well as in the top right corner of every modMine page. You can search for your favourite gene, experiment type, PI, etc.</p>
+<p>4. <a class="externallink" href="ftp://data.modencode.org" rel="nofollow" title="ftp://data.modencode.org">FTP download</a>: For easy bulk download of modENCODE data, you can use the FTP interface.</p>
+<p>5. On the <a class="externallink" href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-6f15c006" rel="nofollow" title="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-6f15c006">Amazon cloud</a>: To save you downloading data to a local machine, all of it is available on the Amazon cloud. You can upload your own data too, and do your analysis there. To get started, check out this <a class="externallink" href="http://data.modencode.org/modencode-cloud.html" rel="nofollow" title="http://data.modencode.org/modencode-cloud.html">modENCODE help page</a>.</p>
+<strong><span class="mw-headline" id="What_is_the_difference_between_data_at_http:.2F.2Fdata.modencode.org_and_data_in_modMine.3F">What is the difference between data at <a class="externallink" href="http://data.modencode.org" rel="nofollow" title="http://data.modencode.org">http://data.modencode.org</a> and data in modMine?</span></strong>
+<p>Both the interfaces link to exactly the same data, but <a class="externallink" href="http://data.modencode.org" rel="nofollow" title="http://data.modencode.org">http://data.modencode.org</a> provides a friendlier user interface, so may be easier to use for finding specific datasets. The two sources should lead to identical submissions, but very occasionally there is a mismatch, if a dataset has been retracted in a new release of modMine, but the data browser has not been updated with the new information. In these cases, modMine is the definitive source of information on what data exists. We&#39;re currently working on improving the modMine interface, and synchronising the two. If you have problems or come across errors, please let us know!</p>
+<strong><span class="mw-headline" id="What_is_the_replicate_and_experiment.2Finput_structure_for_the_ChIP_experiments.3F">What is the replicate and experiment/input structure for the ChIP experiments?</span></strong>
+<p>On a submission by submission base there is a table in the submission page that should help. This is the blue metadata table in the methods section, see for example <a class="externallink" href="http://intermine.modencode.org/query/portal.do?class=Submission&#38;externalids=E20_24_H3K27me3+ChIP-chip" rel="nofollow" title="http://intermine.modencode.org/query/portal.do?class=Submission&#38;externalids=E20_24_H3K27me3+ChIP-chip">http://intermine.modencode.org/query/portal.do?class=Submission&#38;externalids=E20_24_H3K27me3+ChIP-chip</a></p>
+<p>On the experiment level, if you go to an experiment page you should be able to see the different conditions applied in the different submissions. An example would be <a class="externallink" href="http://intermine.modencode.org/query/experiment.do?experiment=Chromatin%20Binding%20Site%20Mapping" rel="nofollow" title="http://intermine.modencode.org/query/experiment.do?experiment=Chromatin%20Binding%20Site%20Mapping">http://intermine.modencode.org/query/experiment.do?experiment=Chromatin%20Binding%20Site%20Mapping</a></p>
+<h4><span class="mw-headline" id="Data_visualisation_and_interpretation">Data visualisation and interpretation</span></h4>
+
+<strong><span class="mw-headline" id="How_are_the_.27peaks.27_calculated_for_ChIP_experiments.3F">How are the &#39;peaks&#39; calculated for ChIP experiments?</span></strong>
+
+<p>Different labs use different peak calling methods - the specifics of the peak callers used for particular datasets can be found on the individual submission report pages. Very broadly, each peak caller will look at the signal from the IP-ed sample compared to the control signal, and use an algorithm to identify regions where the sample signal is considered to be &#39;significantly&#39; enriched, rather than just thought to be caused by experimental or technical noise in that area. </p>
+<strong><span class="mw-headline" id="How_significant_are_the_.27peaks.27_in_ChIP_experiments.3F">How significant are the &#39;peaks&#39; in ChIP experiments?</span></strong>
+
+<p>A common measure of significance shown for peaks from ChIP experiments is a False Discovery Rate (FDR) value. At FDR 1%, for example, it is expected that 1% of all the peaks found for the experiment will be false positives. The FDR value for the peak files associated with individual submissions can be found in the Methods section of the submission report. Some peak callers also show a p-value.</p>
+<strong><span class="mw-headline" id="How_can_I_extract_genome_sequences_upstream_and.2For_downstream_of_particular_features.3F">How can I extract genome sequences upstream and/or downstream of particular features?</span></strong>
+
+<p>One way of doing this is to use &#34;samtools faidx&#34; command: samtools faidx ref.fasta.
+For more information on how to use samtools, see <a class="externallink" href="http://samtools.sourceforge.net/samtools.shtml" rel="nofollow" title="http://samtools.sourceforge.net/samtools.shtml">http://samtools.sourceforge.net/samtools.shtml</a></p>
+<strong><span class="mw-headline" id="How_do_I_export_data_to_the_UCSC_browser.3F">How do I export data to the UCSC browser?</span></strong>
+
+<p>Each submission has a gff3 file which is compatible with the UCSC browser. To view it there, you need to download the gff3 file, then manually upload it to UCSC.</p>
+<h4><span class="mw-headline" id="Experiment_information">Experiment information</span></h4>
+
+<strong><span class="mw-headline" id="Which_antibodies_were_used_for_different_experiments.3F">Which antibodies were used for different experiments?</span></strong>
+<p>In general, antibody information is available in modMine, in the submission reports associated with different submissions. Following the links from there will give you more information about the antibodies used for specific experiments.  </p>
+<p>For histone modifications, there is also a publication assessing the quality of the available antibodies - <a class="externallink" href="http://www.nature.com/nsmb/journal/v18/n1/full/nsmb.1972.html" rel="nofollow" title="http://www.nature.com/nsmb/journal/v18/n1/full/nsmb.1972.html">http://www.nature.com/nsmb/journal/v18/n1/full/nsmb.1972.html</a></p>
+
+<strong><span class="mw-headline" id="How_do_I_obtain_an_aliquot_of_the_antibodies_used.3F">How do I obtain an aliquot of the antibodies used?</span></strong>
+<p>
+At the moment there is no centralised repository for the antibodies used by the modENCODE project. The way to get a hold of an aliquot is to get in touch with the group that used it. </p>
+
+<h4><span class="mw-headline" id="Using_modMine">Using modMine</span></h4>
+
+<strong><span class="mw-headline" id="How_do_I_cite_modMine.3F">How do I cite modMine?</span></strong>
+
+<p>The reference to use is &#34;modMine: flexible access to modENCODE data. Nucleic Acids Res. 2012 January; 40(D1): D1082–D1088&#34;.</p>
+<strong><span class="mw-headline" id="Can_modMine_analyse_my_raw_array_.2F_sequencing_data_for_me.3F">Can modMine analyse my raw array / sequencing data for me?</span></strong>
+
+<p>modMine currently does not offer tools for raw data analysis. However, there are a wealth of tools out there available for doing this. If you&#39;re looking for a starting point to find out more about the analysis methods used for specific modENCODE datasets, you can have a look at the individual submissions within modMine - the tools used for analysis, along with the experimental protocols, are documented in the &#39;Methods&#39; section on the Submission Report page.</p>
+<strong><span class="mw-headline" id="How_do_I_find_out_the_genes_associated_with_particular_genome-wide_binding_datasets.3F">How do I find out the genes associated with particular genome-wide binding datasets?</span></strong>
+
+<p>On the submission report page for each submission, in the Results section, there is a tool for finding the genes associated with binding intervals. You can select either the default, which finds all the genes directly overlapping the binding intervals, or you can specify a search range (e.g. direct intervals + a space up to 2 kb upsteam of each gene). The query result will give you a list of genes, which you can then save as a list and analyse further. At present, this has to be done on a submission-by-submission basis - there is no tool for doing it in bulk.</p>
+<strong><span class="mw-headline" id="I_have_a_link_to_a_webpage_in_an_outdated_release_of_modMine._How_do_I_access_the_same_page_in_the_current_release.3F">I have a link to a webpage in an outdated release of modMine. How do I access the same page in the current release?</span></strong>
+
+<p>If you change the &#39;release-xx&#39; part of the link to &#39;query&#39;, you will automatically be taken to the newest modMine release.</p>
+<h4><span class="mw-headline" id="Using_GBrowse">Using GBrowse</span></h4>
+
+<!--
+<strong><span class="mw-headline" id="How_do_I_upload_custom_tracks_to_GBrowse.3F">How do I upload custom tracks to GBrowse?</span></strong>
+-->
+
+<strong><span class="mw-headline" id="What_is_the_best_way_to_store_and_visualize_Drosophila_genome_annotations_around_my_genomic_locations_of_interest.3F">What is the best way to store and visualize <i>Drosophila</i> genome annotations around my genomic locations of interest?</span></strong>
+
+<p>Upload your data to GBrowse (gff would be the format of choice) and create bookmarks for the locations which interest you. You may also download FlyBase annotations directly from GBrowse (using little floppy icon in the left upper corner of FlyBase genes track). Creating bookmarks should be done via File-&#62;Bookmark this available in the top-level menu in GBrowse. All uploaded tracks will be stored in your account.</p>
+<strong><span class="mw-headline" id="When_viewing_data.2C_what_is_the_SD_.28z-score.29_view.3F_Can_you_change_the_scaling_of_it.3F">When viewing data, what is the SD (z-score) view? Can you change the scaling of it?</span></strong>
+
+<p>When you look at the data with the default settings (using the SD (z-score) view), there is an average read count calculated for a certain range and that this average is set to 0.  Reads significantly enriched in the ChIP samples are plotted as standard deviations greater than 0 (the average line), and those enriched in input are standard deviations plotted below 0. The mean and standard deviation are calculated from the data set as a whole; that is, the entire genome. There are also options to change scaling to just the chromosome, or just the window that you are viewing.</p>
+<h4><span class="mw-headline" id="Further_resources">Further resources</span></h4>
+
+<strong><span class="mw-headline" id="How_can_I_get_more_help_.2F_training.3F">How can I get more help / training?</span></strong>
+
+<p>If you have a specific question that&#39;s not addressed here, feel free to email us at help@modencode.org</p>
+<p>We periodically run webinars, training people up on different aspects of the modENCODE project and the associated data tools. Fur a list of the upcoming webinars, check out ...</p>
+<p>For modMine tools, there is a quick help page.</p>
+
+<h4><span class="mw-headline" id="Questions_about_specific_submissions">Questions about specific submissions</span></h4>
+
+<strong><span class="mw-headline" id="What_is_the_difference_between_the_CTCF_N_and_CTCF_C_datasets.3F">What is the difference between the CTCF_N and CTCF_C datasets?</span></strong>
+<p>One of these uses an antibody for the N terminus of CTCF, while the other one uses an antibody for the C terminus.</p>
+<strong><span class="mw-headline" id="Which_RNA_PolII_antibodies_were_used_in_different_projects.3F">Which RNA PolII antibodies were used in different projects?</span></strong>
+
+<p>Gary Karpen used these ones:
+<br/><a class="externallink" href="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+Pol+II+%28abcam%29" rel="nofollow" title="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+Pol+II+%28abcam%29">http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+Pol+II+%28abcam%29</a>
+<br/>and 
+<br/><a class="externallink" href="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+pol+II+%28ALG%29" rel="nofollow" title="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+pol+II+%28ALG%29">http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=RNA+pol+II+%28ALG%29</a></p>
+<p>with the corresponding links to the antibody information:
+<br/><a class="externallink" href="http://wiki.modencode.org/project/index.php?title=Ab:RNA_Pol_II_%28abcam%29:GK:1&#38;oldid=35186" rel="nofollow" title="http://wiki.modencode.org/project/index.php?title=Ab:RNA_Pol_II_%28abcam%29:GK:1&#38;oldid=35186">http://wiki.modencode.org/project/index.php?title=Ab:RNA_Pol_II_%28abcam%29:GK:1&#38;oldid=35186</a>
+<br/><a class="externallink" href="http://wiki.modencode.org/project/index.php?title=Ab:RNA_pol_II_%28ALG%29:GK:1&#38;oldid=23459" rel="nofollow" title="http://wiki.modencode.org/project/index.php?title=Ab:RNA_pol_II_%28ALG%29:GK:1&#38;oldid=23459">http://wiki.modencode.org/project/index.php?title=Ab:RNA_pol_II_%28ALG%29:GK:1&#38;oldid=23459</a></p>
+<p>Kevin White used:
+<br/><a class="externallink" href="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=PolII" rel="nofollow" title="http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=PolII">http://intermine.modencode.org/query/portal.do?class=Antibody&#38;externalids=PolII</a></p>
+<p>which leads to:
+<a class="externallink" href="http://wiki.modencode.org/project/index.php?title=Ab:PolII:KW:1&#38;oldid=21956" rel="nofollow" title="http://wiki.modencode.org/project/index.php?title=Ab:PolII:KW:1&#38;oldid=21956">http://wiki.modencode.org/project/index.php?title=Ab:PolII:KW:1&#38;oldid=21956</a></p>
+<strong><span class="mw-headline" id="Where_can_I_find_a_file_with_the_exons_transcribed_in_each_developmental_state_in_the_worm.3F">Where can I find a file with the exons transcribed in each developmental state in the worm?</span></strong>
+<p>For worm you can look at this experiment: <a class="externallink" href="http://intermine.modencode.org/query/experiment.do?experiment=Reanalysis%20of%20comprehensive%20set%20of%20C.%20elegans%20transcripts%20and%20expression%20for%20various%20stages%20and%20conditions" rel="nofollow" title="http://intermine.modencode.org/query/experiment.do?experiment=Reanalysis%20of%20comprehensive%20set%20of%20C.%20elegans%20transcripts%20and%20expression%20for%20various%20stages%20and%20conditions">http://intermine.modencode.org/query/experiment.do?experiment=Reanalysis%20of%20comprehensive%20set%20of%20C.%20elegans%20transcripts%20and%20expression%20for%20various%20stages%20and%20conditions</a>
+There you can download the exons locations for the various developmental stages.</p>
+<strong><span class="mw-headline" id="How_do_I_order_clones_that_contain_the_coding_sequence_for_a_gene_included_in_the_MIP_cDNA_library.3F">How do I order clones that contain the coding sequence for a gene included in the MIP cDNA library?</span></strong>
+
+<p>Clones of the MIP cDNA library can be ordered from the Drosophila Genomics Resource Center - I think this is the link to the clone you want to order:
+<a class="externallink" href="https://dgrc.cgb.indiana.edu/product/View?product=1390160" rel="nofollow" title="https://dgrc.cgb.indiana.edu/product/View?product=1390160">https://dgrc.cgb.indiana.edu/product/View?product=1390160</a></p>
+<p>More details about the original cDNA template libraries are available from the Berkeley Drosophila Genome Project page here:
+<a class="externallink" href="http://www.fruitfly.org/EST/SLIPscreen.html" rel="nofollow" title="http://www.fruitfly.org/EST/SLIPscreen.html">http://www.fruitfly.org/EST/SLIPscreen.html</a>
+</p>
+
+
+
+  </div>
+
+{% endblock %}
