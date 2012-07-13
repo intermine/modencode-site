@@ -303,7 +303,8 @@ aside ul li.active { background:url('../img/sidebar-option-active.png') no-repea
 
 /* gallery section */
 section#gallery div.wrap { border:0; position:relative; }
-section#gallery div.wrap h3 { color:#167C94; font-weight:bold; text-shadow:1px 1px 1px #FFF; }
+section#gallery div.wrap h3,
+section#gallery div.wrap h3 a { color:#167C94; font-weight:bold; text-shadow:1px 1px 1px #FFF; }
 section#gallery div.move { display:block; background-position:center left; background-repeat:no-repeat; width:16px;
     height:150px; cursor:pointer; }
 section#gallery div.move.right { float:right; background-image:url('../img/arrow-right.png'); margin-left:10px; }
