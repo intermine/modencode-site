@@ -134,12 +134,42 @@ publications = {
             ]
         },
         {
+            "name": "PNAS",
+            "articles": [
+                {
+                	"title": "Epigenome characterization at single base-pair resolution",
+                    "full_authors": "Henikoff JG, Belskyb JA, Krassovskya K, MacAlpine DM, Henikoff S.",
+                    "short_authors": "Henikoff JG",
+                    "date": "November 2011",
+                    "vol": "108",
+                    "page":"18318-18323",
+                    "doi": "10.1073/pnas.1110731108",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "RNA",
+            "articles": [
+                {
+                	"title": "Identification and experimental validation of splicing regulatory elements in Drosophila melanogaster reveals functionally conserved splicing enhancers in metazoans",
+                    "full_authors": "Brooks AN, Aspden JL, Podgornaia AI, Rio DC, Brenner SE.",
+                    "short_authors": "Brooks AN",
+                    "date": "October 2011",
+                    "vol": "17",
+                    "page":"1884-1894",
+                    "doi": "10.1261/rna.2696311",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
             "name": "Genome Research",
             "articles": [
                 {
                     "title": "Cell-type-specific nuclei purification from whole animals for genome-wide expression and chromatin profiling.",
                     "full_authors": "Steiner FA, Talbert PB, Kasinathan S, Deal RB, Henikoff S.",
-                    "short_authors": "Riddle NC",
+                    "short_authors": "Steiner FA",
                     "date": "April 2012",
                     "vol": "22",
                     "page":"766-777",
