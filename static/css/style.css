@@ -204,7 +204,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.organisms div.bottom div.logos a.oicr { background:url('../img/oicr-logo.png') no-repeat top left;
     padding-top:42px; width:57px; float:right; }
 
-#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:7px; text-align:center; font-style:italic; }
+#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:9px; text-align:center; font-style:italic; }
 #callout-boxes div.organisms ul li { display:inline-block; background-repeat:no-repeat; background-position:top center;
     padding-top:30px; min-width:55px; margin-right:8px; cursor:pointer; position:relative; float:left; }
 #callout-boxes div.organisms ul li.push { margin-right:60px; }
