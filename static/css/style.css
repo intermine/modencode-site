@@ -211,12 +211,12 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 
 #callout-boxes div.organisms ul li.worm { background-image:url('../img/organisms/c-elegans.png'); }
 #callout-boxes div.organisms ul li.fly { background-image:url('../img/organisms/d-melanogaster.png'); }
-#callout-boxes div.organisms ul li.fly_ananas { background-image:url('../img/organisms/d-ananassae.png'); }
-#callout-boxes div.organisms ul li.fly_dmoj { background-image:url('../img/organisms/d-mojavensis.png'); }
-#callout-boxes div.organisms ul li.fly_dp { background-image:url('../img/organisms/d-pseudoobscura.png'); }
-#callout-boxes div.organisms ul li.fly_simul { background-image:url('../img/organisms/d-genericus.png'); }
-#callout-boxes div.organisms ul li.fly_virilis { background-image:url('../img/organisms/d-virilis.png'); }
-#callout-boxes div.organisms ul li.fly_yakuba { background-image:url('../img/organisms/d-genericus.png'); }
+#callout-boxes div.organisms ul li.dana { background-image:url('../img/organisms/d-ananassae.png'); }
+#callout-boxes div.organisms ul li.dmoj { background-image:url('../img/organisms/d-mojavensis.png'); }
+#callout-boxes div.organisms ul li.dpse { background-image:url('../img/organisms/d-pseudoobscura.png'); }
+#callout-boxes div.organisms ul li.dsim { background-image:url('../img/organisms/d-genericus.png'); }
+#callout-boxes div.organisms ul li.dvir { background-image:url('../img/organisms/d-virilis.png'); }
+#callout-boxes div.organisms ul li.dyak { background-image:url('../img/organisms/d-genericus.png'); }
 
 #callout-boxes div.actions { position:absolute; top:45px; left:0; background:#FFF; padding:14px; z-index:1;
     -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border:1px solid #72b0bf;
