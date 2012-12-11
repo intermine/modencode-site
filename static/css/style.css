@@ -204,13 +204,18 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.organisms div.bottom div.logos a.oicr { background:url('../img/oicr-logo.png') no-repeat top left;
     padding-top:42px; width:57px; float:right; }
 
-#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:13px; font-style:italic; }
+#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:10px; text-align:center; font-style:italic; }
 #callout-boxes div.organisms ul li { display:inline-block; background-repeat:no-repeat; background-position:top center;
-    padding-top:30px; min-width:55px; margin-right:18px; cursor:pointer; position:relative; float:left; }
+    padding-top:30px; min-width:55px; margin-right:8px; cursor:pointer; position:relative; float:left; }
 #callout-boxes div.organisms ul li.push { margin-right:60px; }
 
-#callout-boxes div.organisms ul li.worm { background-image:url('../img/organisms/c-elegans.png'); }
-#callout-boxes div.organisms ul li.fly { background-image:url('../img/organisms/d-melanogaster.png'); }
+#callout-boxes div.organisms ul li.worm { background-image:url('../img/organisms/c-elegans.png'); font-weight:bold;}
+#callout-boxes div.organisms ul li.cbrenneri { background-image:url('../img/organisms/c-elegans4.png'); }
+#callout-boxes div.organisms ul li.cbriggsae { background-image:url('../img/organisms/c-elegans2.png'); }
+#callout-boxes div.organisms ul li.cremanei { background-image:url('../img/organisms/c-elegans.png'); }
+#callout-boxes div.organisms ul li.cjaponica { background-image:url('../img/organisms/c-elegans3.png'); }
+
+#callout-boxes div.organisms ul li.fly { background-image:url('../img/organisms/d-melanogaster.png'); font-weight:bold;}
 #callout-boxes div.organisms ul li.dana { background-image:url('../img/organisms/d-ananassae.png'); }
 #callout-boxes div.organisms ul li.dmoj { background-image:url('../img/organisms/d-mojavensis.png'); }
 #callout-boxes div.organisms ul li.dpse { background-image:url('../img/organisms/d-pseudoobscura.png'); }
