@@ -31,8 +31,8 @@ def rinaldo(update=False):
 
         html = render_template('allpubs/allpubs.html', **dict(locals().items() + globals().items()))
         
-        # if problem with permissions for writing the file in the static directory, please uncomment 
-        #return html
+        # problem with permissions for writing the file in the static directory ->
+        return html
 
         try:
             t.write(html)
