@@ -30,8 +30,9 @@ def rinaldo(update=False):
         from models.publications import publications as modencode_publications
 
         html = render_template('allpubs/allpubs.html', **dict(locals().items() + globals().items()))
-
-        return html
+        
+        # if problem with permissions for writing the file in the static directory, please uncomment 
+        #return html
 
         try:
             t.write(html)
