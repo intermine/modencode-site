@@ -4,8 +4,32 @@
 publications = {
     "journal": [
         {
+            "name": "Science",
+            "articles": [
+                {
+                    "title": "Integrative analysis of the Caenorhabditis elegans genome by the modENCODE project.",
+                    "full_authors": "Gerstein MB, Lu ZJ, Van Nostrand EL, Cheng C, Arshinoff BI, Liu T, Yip KY, Robilotto R, Rechtsteiner A, Ikegami K, Alves P, Chateigner A, Perry M, Morris M, Auerbach RK, Feng X, Leng J, Vielle A, Niu W, Rhrissorrakrai K, Agarwal A, Alexander RP, Barber G, Brdlik CM, Brennan J, Brouillet JJ, Carr A, Cheung MS, Clawson H, Contrino S, Dannenberg LO, Dernburg AF, Desai A, Dick L, Dos&eacute; AC, Du J, Egelhofer T, Ercan S, Euskirchen G, Ewing B, Feingold EA, Gassmann R, Good PJ, Green P, Gullier F, Gutwein M, Guyer MS, Habegger L, Han T, Henikoff JG, Henz SR, Hinrichs A, Holster H, Hyman T, Iniguez AL, Janette J, Jensen M, Kato M, Kent WJ, Kephart E, Khivansara V, Khurana E, Kim JK, Kolasinska-Zwierz P, Lai EC, Latorre I, Leahey A, Lewis S, Lloyd P, Lochovsky L, Lowdon RF, Lubling Y, Lyne R, MacCoss M, Mackowiak SD, Mangone M, McKay S, Mecenas D, Merrihew G, Miller DM 3rd, Muroyama A, Murray JI, Ooi SL, Pham H, Phippen T, Preston EA, Rajewsky N, R&auml;tsch G, Rosenbaum H, Rozowsky J, Rutherford K, Ruzanov P, Sarov M, Sasidharan R, Sboner A, Scheid P, Segal E, Shin H, Shou C, Slack FJ, Slightam C, Smith R, Spencer WC, Stinson EO, Taing S, Takasaki T, Vafeados D, Voronina K, Wang G, Washington NL, Whittle CM, Wu B, Yan KK, Zeller G, Zha Z, Zhong M, Zhou X; modENCODE Consortium, Ahringer J, Strome S, Gunsalus KC, Micklem G, Liu XS, Reinke V, Kim SK, Hillier LW, Henikoff S, Piano F, Snyder M, Stein L, Lieb JD, Waterston RH.",
+                    "short_authors": "Gerstein MB",
+                    "date": "24 December 2010",
+                    "vol": "330 no. 6012",
+                    "page":"1775-1787",
+                    "doi": "10.1126/science.1196914",
+                    "type": "integration"
+                },
+                {
+                    "title": "Identification of Functional Elements and Regulatory Circuits by Drosophila modENCODE.",
+                    "full_authors": "modENCODE Consortium, Roy S, Ernst J, Kharchenko PV, Kheradpour P, Negre N, Eaton ML, Landolin JM, Bristow CA, Ma L, Lin MF, Washietl S, Arshinoff BI, Ay F, Meyer PE, Robine N, Washington NL, Di Stefano L, Berezikov E, Brown CD, Candeias R, Carlson JW, Carr A, Jungreis I, Marbach D, Sealfon R, Tolstorukov MY, Will S, Alekseyenko AA, Artieri C, Booth BW, Brooks AN, Dai Q, Davis CA, Duff MO, Feng X, Gorchakov AA, Gu T, Henikoff JG, Kapranov P, Li R, MacAlpine HK, Malone J, Minoda A, Nordman J, Okamura K, Perry M, Powell SK, Riddle NC, Sakai A, Samsonova A, Sandler JE, Schwartz YB, Sher N, Spokony R, Sturgill D, van Baren M, Wan KH, Yang L, Yu C, Feingold E, Good P, Guyer M, Lowdon R, Ahmad K, Andrews J, Berger B, Brenner SE, Brent MR, Cherbas L, Elgin SC, Gingeras TR, Grossman R, Hoskins RA, Kaufman TC, Kent W, Kuroda MI, Orr-Weaver T, Perrimon N, Pirrotta V, Posakony JW, Ren B, Russell S, Cherbas P, Graveley BR, Lewis S, Micklem G, Oliver B, Park PJ, Celniker SE, Henikoff S, Karpen GH, Lai EC, MacAlpine DM, Stein LD, White KP, Kellis M.",
+                    "short_authors": "modENCODE Consortium",
+                    "date": "24 December 2010",
+                    "vol": "330 no. 6012",
+                    "page":"1787-1797",
+                    "doi": "10.1126/science.1198374",
+                    "type": "integration"
+                }
+            ]
+        },        
+        {
             "name": "Nature",
-            "cover": "Nature_modENCODE_cite.jpg",
             "articles": [
                 {
                     "title": "Unlocking the secrets of the genome.",
@@ -50,36 +74,108 @@ publications = {
             ]
         },
         {
-            "name": "Science",
-            "cover": "Science_modENCODE.png",
+            "name": "PLoS Genetics",
+            "articles": [
+                {     
+                	"title": "A Comprehensive Map of Insulator Elements for the Drosophila Genome.",
+                    "full_authors": "N&egrave;gre N, Brown CD, Shah PK, Kheradpour P, Morrison CA, Henikoff JG, Feng X, Ahmad K, Russell S, White RAH, Stein L, Henikoff S, Kellis M, White KP.",
+                    "short_authors": "N&egrave;gre N",
+                    "date": "January 2010",
+                    "vol": "6(1)",
+                    "page":"e1000814",
+                    "doi": "10.1371/journal.pgen.1000814",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "Genome Biology",
+            "articles": [
+                {     
+                	"title": "Caenorhabditis elegans chromosome arms are anchored to the nuclear membrane via discontinuous association with LEM-2.",
+                    "full_authors": "Ikegami K, Egelhofer TA, Strome S, Lieb JD.",
+                    "short_authors": "Ikegami K",
+                    "date": "December 2010",
+                    "vol": "11(12)",
+                    "page":"R120",
+                    "doi": "10.1186/gb-2010-11-12-r120",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "Database",
+            "articles": [
+                {     
+                	"title": "The modENCODE Data Coordination Center: lessons in harvesting comprehensive experimental details",
+                    "full_authors": "Washington NL, Stinson EO, Perry MD, Ruzanov P, Contrino S, Smith R, Zha Z, Lyne R, Carr A, Lloyd P, Kephart E, McKay SJ, Micklem G, Stein LD, Lewis SE.",
+                    "short_authors": "Washington NL",
+                    "date": "August 2011",
+                    "vol": "2011",
+                    "page":"",
+                    "doi": "10.1093/database/bar023",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "Nucleic Acids Research",
             "articles": [
                 {
-
-                    "title": "Integrative analysis of the Caenorhabditis elegans genome by the modENCODE project.",
-                    "full_authors": "Gerstein MB, Lu ZJ, Van Nostrand EL, Cheng C, Arshinoff BI, Liu T, Yip KY, Robilotto R, Rechtsteiner A, Ikegami K, Alves P, Chateigner A, Perry M, Morris M, Auerbach RK, Feng X, Leng J, Vielle A, Niu W, Rhrissorrakrai K, Agarwal A, Alexander RP, Barber G, Brdlik CM, Brennan J, Brouillet JJ, Carr A, Cheung MS, Clawson H, Contrino S, Dannenberg LO, Dernburg AF, Desai A, Dick L, Dos&eacute; AC, Du J, Egelhofer T, Ercan S, Euskirchen G, Ewing B, Feingold EA, Gassmann R, Good PJ, Green P, Gullier F, Gutwein M, Guyer MS, Habegger L, Han T, Henikoff JG, Henz SR, Hinrichs A, Holster H, Hyman T, Iniguez AL, Janette J, Jensen M, Kato M, Kent WJ, Kephart E, Khivansara V, Khurana E, Kim JK, Kolasinska-Zwierz P, Lai EC, Latorre I, Leahey A, Lewis S, Lloyd P, Lochovsky L, Lowdon RF, Lubling Y, Lyne R, MacCoss M, Mackowiak SD, Mangone M, McKay S, Mecenas D, Merrihew G, Miller DM 3rd, Muroyama A, Murray JI, Ooi SL, Pham H, Phippen T, Preston EA, Rajewsky N, R&auml;tsch G, Rosenbaum H, Rozowsky J, Rutherford K, Ruzanov P, Sarov M, Sasidharan R, Sboner A, Scheid P, Segal E, Shin H, Shou C, Slack FJ, Slightam C, Smith R, Spencer WC, Stinson EO, Taing S, Takasaki T, Vafeados D, Voronina K, Wang G, Washington NL, Whittle CM, Wu B, Yan KK, Zeller G, Zha Z, Zhong M, Zhou X; modENCODE Consortium, Ahringer J, Strome S, Gunsalus KC, Micklem G, Liu XS, Reinke V, Kim SK, Hillier LW, Henikoff S, Piano F, Snyder M, Stein L, Lieb JD, Waterston RH.",
-                    "short_authors": "Gerstein MB",
-                    "date": "24 December 2010",
-                    "vol": "330 no. 6012",
-                    "page":"1775-1787",
-                    "doi": "10.1126/science.1196914",
-                    "type": "integration"
-                },
+                	"title": "modMine: flexible access to modENCODE data",
+                    "full_authors": "Contrino S, Smith RN, Butano D, Carr A, Hu F, Lyne R, Rutherford K, Kalderimis A, Sullivan J, Carbon S, Kephart ET, Lloyd P, Stonson EO, Washongton NL, Perry MD, Ruzanov P, Zha Z, Lewis SE, Stein LD, Micklem G.",
+                    "short_authors": "Contrino S",
+                    "date": "January 2012",
+                    "vol": "40",
+                    "page":"D1082-1088",
+                    "doi": "10.1093/nar/gkr921",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "PNAS",
+            "articles": [
                 {
-                    "title": "Identification of Functional Elements and Regulatory Circuits by Drosophila modENCODE.",
-                    "full_authors": "modENCODE Consortium, Roy S, Ernst J, Kharchenko PV, Kheradpour P, Negre N, Eaton ML, Landolin JM, Bristow CA, Ma L, Lin MF, Washietl S, Arshinoff BI, Ay F, Meyer PE, Robine N, Washington NL, Di Stefano L, Berezikov E, Brown CD, Candeias R, Carlson JW, Carr A, Jungreis I, Marbach D, Sealfon R, Tolstorukov MY, Will S, Alekseyenko AA, Artieri C, Booth BW, Brooks AN, Dai Q, Davis CA, Duff MO, Feng X, Gorchakov AA, Gu T, Henikoff JG, Kapranov P, Li R, MacAlpine HK, Malone J, Minoda A, Nordman J, Okamura K, Perry M, Powell SK, Riddle NC, Sakai A, Samsonova A, Sandler JE, Schwartz YB, Sher N, Spokony R, Sturgill D, van Baren M, Wan KH, Yang L, Yu C, Feingold E, Good P, Guyer M, Lowdon R, Ahmad K, Andrews J, Berger B, Brenner SE, Brent MR, Cherbas L, Elgin SC, Gingeras TR, Grossman R, Hoskins RA, Kaufman TC, Kent W, Kuroda MI, Orr-Weaver T, Perrimon N, Pirrotta V, Posakony JW, Ren B, Russell S, Cherbas P, Graveley BR, Lewis S, Micklem G, Oliver B, Park PJ, Celniker SE, Henikoff S, Karpen GH, Lai EC, MacAlpine DM, Stein LD, White KP, Kellis M.",
-                    "short_authors": "modENCODE Consortium",
-                    "date": "24 December 2010",
-                    "vol": "330 no. 6012",
-                    "page":"1787-1797",
-                    "doi": "10.1126/science.1198374",
-                    "type": "integration"
+                	"title": "Epigenome characterization at single base-pair resolution",
+                    "full_authors": "Henikoff JG, Belskyb JA, Krassovskya K, MacAlpine DM, Henikoff S.",
+                    "short_authors": "Henikoff JG",
+                    "date": "November 2011",
+                    "vol": "108",
+                    "page":"18318-18323",
+                    "doi": "10.1073/pnas.1110731108",
+                    "type": "companion"
+                }
+            ]
+        },
+        {
+            "name": "RNA",
+            "articles": [
+                {
+                	"title": "Identification and experimental validation of splicing regulatory elements in Drosophila melanogaster reveals functionally conserved splicing enhancers in metazoans",
+                    "full_authors": "Brooks AN, Aspden JL, Podgornaia AI, Rio DC, Brenner SE.",
+                    "short_authors": "Brooks AN",
+                    "date": "October 2011",
+                    "vol": "17",
+                    "page":"1884-1894",
+                    "doi": "10.1261/rna.2696311",
+                    "type": "companion"
                 }
             ]
         },
         {
             "name": "Genome Research",
-            "cover": "Genome_Research_modENCODE_Special_Issue.png",
             "articles": [
+                {
+                    "title": "Cell-type-specific nuclei purification from whole animals for genome-wide expression and chromatin profiling.",
+                    "full_authors": "Steiner FA, Talbert PB, Kasinathan S, Deal RB, Henikoff S.",
+                    "short_authors": "Steiner FA",
+                    "date": "April 2012",
+                    "vol": "22",
+                    "page":"766-777",
+                    "doi": "10.1101/gr.131748.111",
+                    "type": "companion"
+                },
                 {
                     "title": "Plasticity in patterns of histone modifications and chromosomal proteins in Drosophila heterochromatin.",
                     "full_authors": "Riddle NC, Minoda A, Kharchenko PV, Alekseyenko AA, Schwartz YB, Tolstorukov MY, Gorchakov AA, Jaffe JD, Kennedy C, Linder-Basso D, Peach SE, Shanower G, Zheng H, Kuroda MI, Pirrotta V, Park PJ, Elgin SC, Karpen GH.",
@@ -259,7 +355,17 @@ publications = {
                     "page":"342-348",
                     "doi": "10.1101/gr.114645.110",
                     "type": "companion"
-                }
+                },
+                {
+                    "title": "Genome-wide profiling of salt fractions maps physical properties of chromatin.",
+                    "full_authors": "Henikoff S, Henikoff J, Sakai A, Loeb G, Ahmad K.",
+                    "short_authors": "Henikoff S",
+                    "date": "March 2009",
+                    "vol": "19",
+                    "page":"460-469",
+                    "doi": "10.1101/gr.087619.108",
+                    "type": "companion"
+                }            
             ]
         }
     ]

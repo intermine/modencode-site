@@ -16,7 +16,8 @@ header #top #title { position:absolute; top:0; left:0; background:url('../img/lo
     height:130px; width:153px; }
 header #top #title p { height:0; overflow: hidden; width:127px; }
 header #top p.sub { position:absolute; top:20px; left:170px; width:270px; }
-header #top p.sub a { color:#EEF0E3; }
+header #top p.sub a { color:#EEF0E3; text-decoration:none; }
+header #top p.sub b { color:#EEF0E3; font-weight:bold;}
 
 header #top div.div { position:absolute; top:0; left:678px; border-left:1px solid #2E94AC; border-right:1px solid #3B6872;
     display:block; height:60px; width:0px; }
@@ -203,19 +204,24 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
 #callout-boxes div.organisms div.bottom div.logos a.oicr { background:url('../img/oicr-logo.png') no-repeat top left;
     padding-top:42px; width:57px; float:right; }
 
-#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:13px; font-style:italic; }
+#callout-boxes div.organisms ul { float:left; margin:12px 0 0 12px; color:#167c94; font-size:9px; text-align:center; font-style:italic; }
 #callout-boxes div.organisms ul li { display:inline-block; background-repeat:no-repeat; background-position:top center;
-    padding-top:30px; min-width:55px; margin-right:18px; cursor:pointer; position:relative; float:left; }
+    padding-top:30px; min-width:55px; margin-right:8px; cursor:pointer; position:relative; float:left; }
 #callout-boxes div.organisms ul li.push { margin-right:60px; }
 
-#callout-boxes div.organisms ul li.worm { background-image:url('../img/organisms/c-elegans.png'); }
-#callout-boxes div.organisms ul li.fly { background-image:url('../img/organisms/d-melanogaster.png'); }
-#callout-boxes div.organisms ul li.fly_ananas { background-image:url('../img/organisms/d-ananassae.png'); }
-#callout-boxes div.organisms ul li.fly_dmoj { background-image:url('../img/organisms/d-mojavensis.png'); }
-#callout-boxes div.organisms ul li.fly_dp { background-image:url('../img/organisms/d-pseudoobscura.png'); }
-#callout-boxes div.organisms ul li.fly_simul { background-image:url('../img/organisms/d-genericus.png'); }
-#callout-boxes div.organisms ul li.fly_virilis { background-image:url('../img/organisms/d-virilis.png'); }
-#callout-boxes div.organisms ul li.fly_yakuba { background-image:url('../img/organisms/d-genericus.png'); }
+#callout-boxes div.organisms ul li.worm { background-image:url('../img/organisms/c-elegans.png'); font-weight:bold;}
+#callout-boxes div.organisms ul li.cbrenneri { background-image:url('../img/organisms/c-elegans4.png'); }
+#callout-boxes div.organisms ul li.cbriggsae { background-image:url('../img/organisms/c-elegans2.png'); }
+#callout-boxes div.organisms ul li.cremanei { background-image:url('../img/organisms/c-elegans.png'); }
+#callout-boxes div.organisms ul li.cjaponica { background-image:url('../img/organisms/c-elegans3.png'); }
+
+#callout-boxes div.organisms ul li.fly { background-image:url('../img/organisms/d-melanogaster.png'); font-weight:bold;}
+#callout-boxes div.organisms ul li.dana { background-image:url('../img/organisms/d-ananassae.png'); }
+#callout-boxes div.organisms ul li.dmoj { background-image:url('../img/organisms/d-mojavensis.png'); }
+#callout-boxes div.organisms ul li.dpse { background-image:url('../img/organisms/d-pseudoobscura.png'); }
+#callout-boxes div.organisms ul li.dsim { background-image:url('../img/organisms/d-genericus.png'); }
+#callout-boxes div.organisms ul li.dvir { background-image:url('../img/organisms/d-virilis.png'); }
+#callout-boxes div.organisms ul li.dyak { background-image:url('../img/organisms/d-genericus.png'); }
 
 #callout-boxes div.actions { position:absolute; top:45px; left:0; background:#FFF; padding:14px; z-index:1;
     -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border-radius:3px; border:1px solid #72b0bf;
@@ -238,6 +244,7 @@ div.wrap { width:1000px; margin:0 auto; margin-top:30px; }
     background:-ms-linear-gradient(top, rgba(215,213,200,0.7) 0%,rgba(236,234,224,1) 1%,rgba(255,255,255,0.6) 8%);
     background:linear-gradient(top, rgba(215,213,200,0.7) 0%,rgba(236,234,224,1) 1%,rgba(255,255,255,0.6) 8%); }
 #modmine-projects h3 { color:#565148; font-weight:bold; text-shadow:1px 1px 1px #e4e5e4; margin:0 0 15px 13px; }
+#modmine-projects h4 { color:#565148; font-weight:bold; text-shadow:1px 1px 1px #e4e5e4; margin:0 0 15px 13px; }
 
 /* modmine projects -> sidebar */
 aside { border-right:1px solid #fff; width:280px; float:left; padding-top:20px; color:#24251f; }
@@ -301,7 +308,8 @@ aside ul li.active { background:url('../img/sidebar-option-active.png') no-repea
 
 /* gallery section */
 section#gallery div.wrap { border:0; position:relative; }
-section#gallery div.wrap h3 { color:#167C94; font-weight:bold; text-shadow:1px 1px 1px #FFF; }
+section#gallery div.wrap h3,
+section#gallery div.wrap h3 a { color:#167C94; font-weight:bold; text-shadow:1px 1px 1px #FFF; }
 section#gallery div.move { display:block; background-position:center left; background-repeat:no-repeat; width:16px;
     height:150px; cursor:pointer; }
 section#gallery div.move.right { float:right; background-image:url('../img/arrow-right.png'); margin-left:10px; }
@@ -344,7 +352,7 @@ footer { margin:0 auto; margin-top:16px; width:1000px; text-align:center; color:
 div.page { background:#FFF; border:1px solid #d7d5c8; -moz-border-radius:5px; -webkit-border-radius:5px;
     -o-border-radius:5px; border-radius:5px; padding:20px; font-size:14px; line-height:16px; }
 div.page h3 { color:#565148; margin-bottom:20px; font-size:20px; font-weight:bold; }
-div.page h4 { color:#167C94; margin-bottom:20px; font-size:18px; }
+div.page h4 { color:#565148; margin-bottom:4px; font-size:16px; font-weight:bold; }
 div.page p,
 div.page ul { font-size:14px; line-height:16px; margin-bottom:10px; }
 div.page ul { list-style-type:disc; margin-left:20px; }

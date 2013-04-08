@@ -27,7 +27,7 @@ def create_app():
     from presenters.forms import forms
     from presenters.app import app as system
     from presenters.messaging import messaging
-
+    from presenters.allpubs import allpubs
 
     # register modules
     app.register_blueprint(home)
@@ -35,6 +35,7 @@ def create_app():
     app.register_blueprint(forms)
     app.register_blueprint(system)
     app.register_blueprint(messaging)
+    app.register_blueprint(allpubs)
 
     # template filters
     @app.template_filter('pi_filter')

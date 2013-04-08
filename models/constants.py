@@ -1,6 +1,6 @@
 DATASOURCE_ROOT = 'http://intermine.modencode.org/query'
 INTERMINE_URL = 'http://intermine.modencode.org/'
-MODMINE_REL = ['27', '26', '25', '24','23','22','21','20','19','18','17','16']
+MODMINE_REL = ['32', '31', '27', '26', '25','23','21','18','16']
 DATASET_SEARCH_URL = 'http://data.modencode.org'
 FTP_URL = 'ftp://data.modencode.org'
 PRERELEASE_URL = 'http://submit.modencode.org/submit/bulk_download'
@@ -9,4 +9,4 @@ GBROWSE_URL = 'http://modencode.oicr.on.ca/fgb2/gbrowse/'
 FILES_URL = 'http://data.modencode.org/publications/files'
 WIKI_URL = 'http://wiki.modencode.org'
 MESSAGING_RSS_URL = 'http://blog.modencode.org/feed'
-MESSAGING_RSS_TAG = '[important]'
+MESSAGING_RSS_TAG = '[NB]'

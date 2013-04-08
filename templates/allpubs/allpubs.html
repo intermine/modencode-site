@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+{% set articles = modencode_publications|flatten_publications %}
+<style>
+section#gallery div.publications { overflow:visible; width:1000px; height:{{ articles|length * 52 }}px; display:block; position:relative; }
+section#gallery div.publications div.article { float:left; width:304px; margin:0 15px 5px 0; padding:5px 0;
+
+</style>
+
+<section id="gallery">
+    <div class="wrap">
+        <h3><a href=
+    "{{ url_for('static.page', name='pubs') }}">modENCODE publications</a></h3>
+        <div class="inner">
+            <div class="publications">
+                {% set articles = modencode_publications|flatten_publications %}
+                <div class="wrapper" style="width:{{ 3 * 316 }}px">
+                    <div class="set">
+                    {% for article in articles %}
+                        {% if loop.index0 is divisibleby(3) and not loop.last and not loop.first -%}
+                            </div><div class="set">
+                        {%- endif %}
+                        <div class="article">
+                            <a href="http://dx.doi.org/{{ article.doi }}" target="new">
+                                <img src="{{ url_for('static', filename='img/journals/' + article|article_image + '.jpg') }}" />
+                                <h4 class="{% if article.title|length > 150 %}small{% endif %}">{{ article.title|italics|safe }}</h4>
+                                <p title="{{ article.full_authors }}">{{ article.full_authors|shorten_authors(article.title)|safe }}</p>
+                                <p><i>{{ article.journal }}</i>, <strong>{{ article.vol }}</strong>, pp {{ article.page }}, doi: {{ article.doi }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p></p>
+</section>
+{% endblock %}
+
+<!--
+<section id="list">
+        <h3><a href=
+    "{{ url_for('static.page', name='pubs') }}">modENCODE publications</a></h3>
+            <div class="publications">
+                {% set articles = modencode_publications|flatten_publications %}
+                <div class="wrapper" style="width:{{ 3 *  316 }}px"> 
+                        <table >
+                    {% for article in articles %}
+                        <tr >
+                            <td>
+                                <div class="article">
+                            <a href="http://dx.doi.org/{{ article.doi }}" target="new">
+                                <img src="{{ url_for('static', filename='img/journals/' + article|article_image + '.jpg') }}" />
+                                <td class="{% if article.title|length > 150 %}small{% endif %}">{{ article.title|italics|safe }}</td>
+                                <td title="{{ article.full_authors }}">{{ article.full_authors|shorten_authors(article.title)|safe }}</td>
+                                <td><i>{{ article.journal }}</i>, <strong>{{ article.vol }}</strong>, pp {{ article.page }}, doi: {{ article.doi }}</td>
+                            </a>
+                            </div>
+                    {% endfor %}
+                    </table>
+                </div>
+        </div>
+</section>
+-->
+
+
+

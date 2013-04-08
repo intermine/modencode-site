@@ -15,7 +15,9 @@
                 <div class="dropdown"><span class="caret"></span></div>
                 <ul>
                     {% for rel in MODMINE_REL %}
-                        <li><a class="size-{{ loop.index }}" target="new" href="{{ INTERMINE_URL }}release-{{ rel }}">{{ rel }}</a></li>
+                    {%- if not loop.first %}
+                        <li><a class="size-{{ loop.index }}" target="_blank" href="{{ INTERMINE_URL }}release-{{ rel }}">{{ rel }}</a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>            
@@ -27,20 +29,21 @@
             </script>
 
             <div class="button">
-                <a class="amaranth" target="new" href="{{ INTERMINE_URL }}query">Release <span>#</span>{{ MODMINE_REL[0] }}</a>
+                <a class="amaranth" target="_blank" href="{{ INTERMINE_URL }}query">Release <span>#</span>{{ MODMINE_REL[0] }}</a>
             </div>
         </header>
         <div>
             <div class="left">
+
                 <div class="networks">
-                    <p><strong>Explore</strong> a hierarchical view of the physical regulatory networks for fly and worm.</p>
+                    <p><strong>Explore</strong> a hierarchical view of <strong>regulatory networks</strong> for fly and worm.</p>
                 </div>
                 <div class="regions" style="display:none">
-                    <p><strong>Upload your</strong> genomic regions and search for features found by the
+                    <p><strong>Upload</strong> your genomic regions and search for features found by the
                         <strong>modENCODE</strong> project.</p>
                 </div>
                 <div class="maps" style="display:none">
-                    <p>Upload your list of fly gene and view an expression score heatmap.</p>
+                    <p><strong>Upload</strong> your list of fly genes and view an expression score <strong>heatmap</strong>.</p>
                 </div>
             </div>
             <div class="right">
@@ -51,12 +54,12 @@
                     </a>
                     <div class="actions">
                         <div class="button">
-                            <a target="new" href="http://intermine.modencode.org/query/flyRegulatoryNetwork.do" class="amaranth">
+                            <a target="_blank" href="http://intermine.modencode.org/query/flyRegulatoryNetwork.do" class="amaranth">
                                 <span>View</span> Fly Regulatory Network
                             </a>
                         </div>
                         <div class="button">
-                            <a target="new" href="http://intermine.modencode.org/query/wormRegulatoryNetwork.do" class="blumine">
+                            <a target="_blank" href="http://intermine.modencode.org/query/wormRegulatoryNetwork.do" class="blumine">
                                 <span>View</span> Worm Regulatory Network
                             </a>
                         </div>
@@ -64,14 +67,14 @@
                 </div>
 
                 <div class="feature" data-type="regions">
-                    <a href="http://intermine.modencode.org/query/spanUploadOptions.do" target="new">
+                    <a href="http://intermine.modencode.org/query/spanUploadOptions.do" target="_blank">
                         <img src="{{ url_for('static', filename='img/modmine/region.png') }}" alt="region search">
                         Regions
                     </a>
                 </div>
 
                 <div class="feature" data-type="maps">
-                    <a href="http://intermine.modencode.org/query/bagDetails.do?scope=global&bagName=example" target="new">
+                    <a href="http://intermine.modencode.org/query/bagDetails.do?scope=global&bagName=example" target="_blank">
                         <img src="{{ url_for('static', filename='img/modmine/heatmap.png') }}" alt="gene expression heatmap">
                         Maps
                     </a>
@@ -97,7 +100,7 @@
     <div class="box amazon">
         <header>
             <div class="button" style="width:130px;text-align:center">
-                <a class="blumine" target="new" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">
+                <a class="blumine" target="_blank" href="{{ DATASET_SEARCH_URL + '/' + CLOUD_PAGE }}">
                     <span class="cloud"></span> Instance
                 </a>
             </div>
@@ -109,7 +112,7 @@
     </div>
     <div class="box datasets">
         <header>
-            <div class="button center"><a class="blumine" target="new" href="{{ DATASET_SEARCH_URL }}">
+            <div class="button center"><a class="blumine" target="_blank" href="{{ DATASET_SEARCH_URL }}">
                 Dataset <span class="search"></span></a>
             </div>
         </header>
@@ -119,12 +122,12 @@
     </div>
     <div class="box ftp">
         <header>
-            <div class="button center"><a class="blumine" target="new" href="{{ FTP_URL }}">
+            <div class="button center"><a class="blumine" target="_blank" href="{{ FTP_URL }}">
                 FTP <span class="download"></span></a>
             </div>
         </header>
         <div>
-            <p>Download publicly released data using the traditional FTP interface.</p>
+            <p>Download released data using the traditional FTP interface.</p>
         </div>
     </div>
 
@@ -142,13 +145,18 @@
             </div>
             <ul>
                 <li class="worm">C. elegans</li>
-                <li class="fly push">D. melanogaster</li>
-                <li class="fly_ananas">D. ananassae</li>
-                <li class="fly_dmoj">D. mojavensis</li>
-                <li class="fly_dp">D. pseudoobscura</li>
-                <li class="fly_simul">D. simulans</li>
-                <li class="fly_virilis">D. virilis</li>
-                <li class="fly_yakuba">D. yakuba</li>
+                <li class="cbrenneri">C. brenneri</li>
+                <li class="cbriggsae">C. briggsae</li>
+                <li class="cjaponica">C. japonica</li>
+                <li class="cremanei">C. remanei</li>
+
+                <li class="fly">D. melanogaster</li>
+                <li class="dana">D. ananassae</li>
+                <li class="dmoj">D. mojavensis</li>
+                <li class="dpse">D. pseudoobscura</li>
+                <li class="dsim">D. simulans</li>
+                <li class="dvir">D. virilis</li>
+                <li class="dyak">D. yakuba</li>
             </ul>
             <div class="clear"></div>
         </div>
@@ -173,10 +181,11 @@
             .append($('<div/>', {
                 'class': 'button',
                 html: $('<a/>', {
-                    target: 'new',
+                    target: '_blank',
                     href: function() {
                         // link to GBrowse
-                        return '{{ GBROWSE_URL }}' + $(that).attr('class').replace('push', '')
+                        //return '{{ GBROWSE_URL }}' + $(that).attr('class').replace('push', '')
+                        return '{{ GBROWSE_URL }}' + $(that).attr('class')
                         .replace('active', '').replace(/ /g,'');
                     }(),
                     'class': 'amaranth',
@@ -186,7 +195,7 @@
             .append($('<div/>', {
                 'class': 'button',
                 html: $('<a/>', {
-                    target: 'new',
+                    target: '_blank',
                     href: function() {
                         // link to Dataset Search
                         return '{{ DATASET_SEARCH_URL }}/?Organism=' + $(that).text();
@@ -370,7 +379,8 @@
 {% block gallery %}
 <section id="gallery">
     <div class="wrap">
-        <h3>modENCODE publications</h3>
+        <h3><a href=
+    "{{ url_for('static.page', name='pubs') }}">modENCODE publications</a></h3>
         <div class="move right"></div>
         <div class="move left inactive"></div>
         <div class="inner">
