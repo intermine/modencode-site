@@ -8,7 +8,7 @@ cfg = {
     'FLASK_PORT' : 5000,
     'DEBUG' : False,
     'SECRET_KEY' : '',
-    'ALLOWED_IP' : ['127.0', '192.168', '131.111.60'],
+    'ALLOWED_IP' : ['127.0'],
     'MAIL_SERVER' : '',
     'MAIL_PORT' : 25,
     'MAIL_USE_TLS' : False,
